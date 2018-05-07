@@ -17,7 +17,7 @@ def quick_sort(array, begin=0, end=None):
         return None
 
     pivot = begin
-    for i in xrange(begin + 1, end + 1):
+    for i in range(begin + 1, end + 1):
         if array[i] <= array[begin]:
             pivot += 1
             array[i], array[pivot] = array[pivot], array[i]
@@ -30,8 +30,7 @@ if __name__ == "__main__":
 
     import random
 
-    l = range(100)
+    l = list(range(100))
     random.shuffle(l)
 
     quick_sort(l)
-    #print l
