@@ -34,4 +34,4 @@ if __name__ == "__main__":
     random.shuffle(l)
 
     quick_sort(l)
-    print l
+    #print l
